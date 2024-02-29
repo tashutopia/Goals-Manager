@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Database Views</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Views</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-<h2>CSV Data</h2>
+    <h2>Goals</h2>
 
-<div class="tabs">
-  <button class="tablinks" onclick="openTab(event, 'view1')">View 1</button>
-  <button class="tablinks" onclick="openTab(event, 'view2')">View 2</button>
-  <button class="tablinks" onclick="openTab(event, 'view3')">View 3</button>
-</div>
+    <div class="tabs">
+        <button class="tablinks" onclick="openTab(event, 'view1')">View 1</button>
+        <button class="tablinks" onclick="openTab(event, 'view2')">View 2</button>
+        <button class="tablinks" onclick="openTab(event, 'view3')">View 3</button>
+    </div>
 
-<div id="view1" class="tabcontent">
-  <!-- Content for View 1 -->
-  <table id="csvTable"></table>
-</div>
+    <div id="view1" class="tabcontent">
+        <!-- Content for View 1 -->
+        <table id="view1-table"></table>
+    </div>
 
-<div id="view2" class="tabcontent">
-  <!-- Content for View 2 -->
-  "Content for View 2"
-</div>
+    <div id="view2" class="tabcontent">
+        <!-- Content for View 2 -->
+        "Content for View 2"
+    </div>
 
-<div id="view3" class="tabcontent">
-  <!-- Content for View 3 -->
-</div>
+    <div id="view3" class="tabcontent">
+        <!-- Content for View 3 -->
+    </div>
 
-<script src="script.js"></script>
+    <script src="mongodb.js"></script>
+    <script src="view1table.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
